@@ -11,9 +11,19 @@ const Signin = () => {
         <h1 className="text-center text-3xl">Sign In</h1>
         <form>
           <Label htmlFor="email">Email</Label>
-          <Input />
+          <Input
+            type="email"
+            id="email"
+            placeholder="Email"
+            className="bg-white"
+          />
           <Label htmlFor="email">Password</Label>
-          <Input />
+          <Input
+            type="password"
+            id="password"
+            placeholder="Password"
+            className="bg-white"
+          />
           <Button className="mt-2" disabled>
             {/* <Loader2 className="animate-spin" />
         Please wait */}
