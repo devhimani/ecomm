@@ -6,21 +6,26 @@ import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (
-    <div>
-      <h1>Sign In</h1>
-      <form>
-        <Label htmlFor="email">Email</Label>
-        <Input />
-        <Label htmlFor="email">Password</Label>
-        <Input />
-        <Button disabled>
-          {/* <Loader2 className="animate-spin" />
+    <div className="h-screen flex items-center justify-center">
+      <div className="border m-2 p-4 rounded-lg w-full max-w-sm bg-gray-100 flex flex-col gap-4">
+        <h1 className="text-center text-3xl">Sign In</h1>
+        <form>
+          <Label htmlFor="email">Email</Label>
+          <Input />
+          <Label htmlFor="email">Password</Label>
+          <Input />
+          <Button className="mt-2" disabled>
+            {/* <Loader2 className="animate-spin" />
         Please wait */}
-          Sign up
-        </Button>
-      </form>
-      <div>
-        Dont have an account? <Link to="/signup">Signup</Link>
+            Sign up
+          </Button>
+        </form>
+        <div className="text-sm">
+          Dont have an account?
+          <Link className="underline" to="/signup">
+            Signup
+          </Link>
+        </div>
       </div>
     </div>
   );
