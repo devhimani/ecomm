@@ -27,13 +27,13 @@ const Signin = () => {
           <Button className="mt-2" disabled>
             {/* <Loader2 className="animate-spin" />
         Please wait */}
-            Sign up
+            Sign In
           </Button>
         </form>
         <div className="text-sm">
           Dont have an account?
           <Link className="underline" to="/signup">
-            Signup
+            Sign Up
           </Link>
         </div>
       </div>
